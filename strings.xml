@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Flights</string>
+    <string name="flyout"></string>
+    <string name="flyin"></string>
+    <string-array name="cities">
+        <item>Moscow</item>
+        <item>Irkutsk</item>
+        <item>London</item>
+        <item>Paris</item>
+        <item>New York</item>
+        <item>New Arleans</item>
+        <item>Berlin</item>
+        <item>Washington</item>
+        <item>Sydney</item>
+        <item>Warsaw</item>
+    </string-array>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Cities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please, enter departure and arrival cities"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Spinner
+            android:id="@+id/flyout"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:entries="@array/cities"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="                          " />
+
+            <Spinner
+                android:id="@+id/flyin"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:textSize="30sp"
+                android:entries="@array/cities" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="                          "/>
+
+    <TextView
+        android:id="@+id/Dates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please, enter departure and arrival dates"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/DateOut"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:inputType="textPersonName"
+                android:text="Departure date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="                          " />
+
+            <EditText
+                android:id="@+id/DateIn"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:inputType="textPersonName"
+                android:text="Arrival date" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="                          "/>
+
+    <TextView
+        android:id="@+id/Passengers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please, enter the number of passengers"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/PassengersAdult"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:inputType="textPersonName"
+                android:text="Adult" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="                 "/>
+
+            <EditText
+                android:id="@+id/PassengersChildren"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:inputType="textPersonName"
+                android:text="Children" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="                 "/>
+
+            <EditText
+                android:id="@+id/PassengersInfants"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:inputType="textPersonName"
+                android:text="Infant" />
+    </LinearLayout>
+</LinearLayout>
